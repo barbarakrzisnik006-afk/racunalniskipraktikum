@@ -7,11 +7,11 @@
 	Za prosojnice je značilna uporaba okolja \texttt{frame},
 	s katerim definiramo posamezno prosojnico,
 	%
-	postopno odkrivanje prosojnic,
+	\pause postopno odkrivanje prosojnic,
 	%
-	ter nekateri drugi ukazi, ki jih najdemo v paketu \texttt{beamer}.
+	\pause ter nekateri drugi ukazi, ki jih najdemo v paketu \texttt{beamer}.
 	%
-	\begin{exampleblock}{Primer}
+	\pause \begin{exampleblock}{Primer}
 		Verjetno ste že opazili, da za naslovno prosojnico niste uporabili
 		ukaza \texttt{maketitle}, ampak ukaz \texttt{titlepage}.
 	\end{exampleblock}
@@ -21,11 +21,17 @@
 	% Naloga 2.3.2:
 	% Oblikujte poudarjena bloka z opombo in opozorilom.
 
-		Okolja za poudarjene bloke so \texttt{block}, \texttt{exampleblock} in \texttt{alertblock}.
+		
+		\begin{block}{Opomba}
+			Okolja za poudarjene bloke so \texttt{block}, \texttt{exampleblock} in \texttt{alertblock}.
+		\end{block}
 
-		Začetek poudarjenega bloka (ukaz \texttt{begin}) vedno sprejme 
-		dva argumenta: okolje in naslov bloka.
-		Drugi argument (za naslov) je lahko prazen. 
+		
+		\begin{alertblock}{Pozor!}
+			Začetek poudarjenega bloka (ukaz \texttt{begin}) vedno sprejme 
+			dva argumenta: okolje in naslov bloka.
+			Drugi argument (za naslov) je lahko prazen. 
+		\end{alertblock}
 
 \end{frame}
 
@@ -42,7 +48,7 @@
 	   Denimo, da je praštevil končno mnogo.
 		% Z neobveznim argumentom [<+->] okolja itemize določimo,
 		% da se elementi naštevanja odkrivajo postopoma.
-	   \begin{itemize}
+	   \begin{itemize}[<+->]
 		  \item Naj bo \(p\) \alert{največje} praštevilo.
 		  \item Naj bo \(q\) produkt števil \(1\), \(2\), \ldots, \(p\).
 		  \item Število \(q+1\) ni deljivo z nobenim praštevilom, torej je \(q+1\) praštevilo.
